@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans">
+<title>Document</title>
+<link rel="stylesheet" href="red.css">
+<style>
+  body {
+    font-family: "Noto Sans", sans-serif;
+  }
+
+.logo{
+    position: relative;
+    left: 1%;
+    width: 11%;
+    padding-top: 1%;
+}
+
+.menu{
+  margin: 37px 61px -31px;
+}
+.menu a{
+  padding: 23px;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+.title{
+  margin: 80px 82px -84px;
+}
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 8% 1%;
+}
+
+.img-container img {
+  width: 100%;
+  max-width: 250px;
+  margin: -5px -5px; 
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 103%;
+  height: 100%;
+  overflow: auto;
+
+  background-color: rgb(0,0,0);
+}
+.myImg{
+  width: 100%;
+    max-width: 300px;
+    border-radius: 41px;
+    padding: 18px;
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 638px;
+}
+
+.close {
+  position: fixed;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: 100;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 760px){
+  .all{
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    width: 93%;
+  }
+  .logo{
+    width:38%;
+  }
+  .menu{
+    font-size: 13px;
+    position: absolute;
+    width: max-content;
+    left: -2%;
+  }
+  .title{
+    text-align: center;
+    padding-bottom: 23%;
+  }
+  .img-container{
+    display: table;
+  }
+  .img-container img{
+    max-width: 145px;
+    margin: -9px -10px;
+    position: relative;
+    left: 4%;
+  }
+  .modal-content {
+    margin: auto;
+    width: 73%;
+    max-width: 719px;
+    padding-top: 116px;
+  }
+  .close{
+    right: 324px;
+  }
+}
+</style>
+</head>
+<body>
+<div class="all">
+  <div class="logo">
+    <a href="blackswanfashion/main.html"><img src="https://i.ibb.co/Y34q58B/logo.png" alt="" width="40%"></a>
+  </div>
+    <div class="menu">
+      <a href="D:\blackswanfashion\main.html">HOME</a>
+    </div>
+    <div class="title">
+      <h1>Style of <br>OLD MONEY</h1>
+    </div>
+  <div class="img-container">
+    <img class="myImg" src="https://i.pinimg.com/736x/36/33/c1/3633c160a3bd4510b112413cbb16d49d.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/564x/10/7d/5c/107d5c87cef95035f19349e46992f3fa.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/736x/eb/d8/ff/ebd8ffd4565a13c09de77dc940f3a2d5.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/564x/37/76/81/37768136888c61f3c9009477bc548117.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/736x/09/54/fd/0954fdb26e579d120b49ab73b224c6da.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/564x/c5/bd/4a/c5bd4aa2de3ddc92a372dfc3c1fd46a5.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/474x/66/b6/b6/66b6b6da14a96290602c9b71a23a45c4.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/474x/6f/67/c7/6f67c7cbe484a35274a17f0a65b62b4f.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/564x/1e/42/e1/1e42e1ba752d49b982be9751780381b7.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/736x/43/1f/b5/431fb5cee8e5f89e9fecb7b93eac0db0.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/564x/44/59/ff/4459ffa75fb07a533f0b994bed5510b7.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/736x/8c/0e/45/8c0e45320316757b25812bdddf57a010.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/736x/44/be/fe/44befe0a9d6b92a2e2cf968b90347479.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/564x/71/35/da/7135da093478e4bc3e9cee8218bee6e8.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/564x/63/0b/8b/630b8b5099cfc783fdc84ed65fe9817f.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/564x/c9/bd/76/c9bd76799ec5a7b4d3f8a35e09a4e4a1.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/564x/44/e3/5c/44e35c4c8ae6586141f924d0bffd62e2.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/564x/11/7d/cd/117dcd4318c7fec04fa4f9251dd5dd33.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/564x/b8/60/c3/b860c36cc4d1c520d66033df684138fd.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/564x/a5/90/01/a59001459914730af454801ac597ee60.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/564x/1f/7d/16/1f7d1683787cdf931704b706a0182383.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/564x/4b/68/31/4b6831cce349d47bcd4334fbd9f7adcc.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/564x/19/0c/d8/190cd8823b8a0a4e96c178ca383bca33.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/474x/47/f1/cc/47f1cc65508e9692b29e42b39a6d4e74.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/564x/00/86/70/008670ad64cfcabd2d2c1eac45d2561a.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/564x/7f/53/16/7f5316adf1bfa412fc35088cccec9358.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/564x/67/e3/ef/67e3ef3fdefbf7b3c6d231becc937033.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/736x/9e/a2/95/9ea29522e58d1d83cd6b9f3410ed0e74.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/736x/00/9b/b0/009bb0f95c7c4da76be76e88a82d3237.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/736x/f8/d2/8c/f8d28c9d920e809f031c4416338b2272.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/736x/2b/3a/bd/2b3abdf76fca15f51d4a317b94bd8cae.jpg" >
+    <img class="myImg" src="https://i.pinimg.com/736x/12/69/5e/12695e95d448a9d5d0cc0ff35ee7cb05.jpg" >
+    <img class="myImg" src="" >
+    <img class="myImg" src="" >
+    <img class="myImg" src="" >
+    <img class="myImg" src="" >
+    <img class="myImg" src="" >
+    <img class="myImg" src="" >
+    <img class="myImg" src="" >
+    <img class="myImg" src="" >
+
+  </div>
+
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+</div>
+<script>
+var modal = document.getElementById("myModal");
+var images = document.querySelectorAll(".myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+images.forEach(function(image) {
+  image.addEventListener("click", function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  });
+});
+
+var span = document.getElementsByClassName("close")[0];
+window.onclick = function(event) {
+  if (event.target == modal || event.target == span) {
+    modal.style.display = "none";
+  }
+};
+</script>
+
+</body>
+</html>
